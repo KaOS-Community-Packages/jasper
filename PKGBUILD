@@ -5,11 +5,10 @@ pkgdesc='Software-based implementation of the codec specified in the emerging JP
 url='https://www.ece.uvic.ca/~mdadams/jasper/'
 arch=('x86_64')
 license=('custom:JasPer2.0')
-depends=('libjpeg')
-optdepends=('jasper-doc: documentation'
-            'freeglut: jiv support'
+depends=('libjpeg-turbo')
+optdepends=('freeglut: jiv support'
             'glu: jiv support')
-makedepends=('libjpeg' 'freeglut' 'libxmu' 'glu' 'cmake' 'doxygen')
+makedepends=('freeglut' 'libxmu' 'glu' 'cmake' 'doxygen')
 options=('staticlibs')
 source=(${pkgname}-${pkgver}.tar.gz::https://github.com/mdadams/jasper/archive/version-${pkgver}.tar.gz
         jasper-1.900.1-fix-filename-buffer-overflow.patch)
