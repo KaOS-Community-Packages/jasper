@@ -1,5 +1,5 @@
 pkgname='jasper'
-pkgver=2.0.24
+pkgver=2.0.32
 pkgrel=1
 pkgdesc='Software-based implementation of the codec specified in the emerging JPEG-2000 Part-1 standard'
 url='https://www.ece.uvic.ca/~mdadams/jasper/'
@@ -10,7 +10,7 @@ makedepends=('libxmu' 'cmake' 'doxygen')
 options=('staticlibs')
 source=(${pkgname}-${pkgver}.tar.gz::https://github.com/mdadams/jasper/archive/version-${pkgver}.tar.gz)
         #jasper-1.900.1-fix-filename-buffer-overflow.patch)
-sha512sums=('9e3c6b236844d5a25d9f75cfd55de9d1137b2c3f46d5646761fd501fefc6386ffbf935d2d806d9a28fa351569afd90d1fed494ef929615beca3a0dd0f8247e04')
+sha512sums=('e85e62788652d9113fb694f29a978d61e1b79f4cd1e0e7db1247e0648cab2fced22dac0360ed722ca587834eb8ca5a86eb0161b169276a9810520d0b03df81ad')
             #'b8d798bf75523c5db263783e42c653dd0cb03deee90be32eddf878bb6893cca02abadd94de6a8c737a5b7fe76f7fb245979f010765e6a95fc520b215e3a2a7f0')
 
 prepare() {
